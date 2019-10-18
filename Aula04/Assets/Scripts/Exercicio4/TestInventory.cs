@@ -28,7 +28,7 @@ public class TestInventory : MonoBehaviour
         // Colocar sacola secundária na principal
         mainBag.Add(secondaryBag);
 
-        // Imprimir o peso total dos itens na sacola principal (supostamente 40)
+        // Imprimir o peso total dos itens na sacola principal (supostamente 50)
         Debug.Log($"Total weight in main bag = {mainBag.Weight}");
 
         // Mostrar todos os itens e sub-itens com um simples ToString à
