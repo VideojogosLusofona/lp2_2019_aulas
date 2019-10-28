@@ -10,7 +10,7 @@ public class EventMaster : MonoBehaviour
     [SerializeField] private Texture background = null;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.W)) OnKeyPress('W');
         if (Input.GetKeyDown(KeyCode.S)) OnKeyPress('S');
