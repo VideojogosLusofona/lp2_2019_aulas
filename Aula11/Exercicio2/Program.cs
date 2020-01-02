@@ -44,9 +44,9 @@ namespace Exercicio2
                 Update();
                 Render();
                 Thread.Sleep(
-                    (int)(start / 10000)
+                    (int)(start / TimeSpan.TicksPerSecond)
                     + 20
-                    - (int)(DateTime.Now.Ticks / 10000));
+                    - (int)(DateTime.Now.Ticks / TimeSpan.TicksPerSecond));
             }
         }
 
