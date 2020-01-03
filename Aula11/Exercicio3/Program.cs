@@ -112,9 +112,9 @@ namespace Exercicio3
 
                 // Wait for next frame
                 Thread.Sleep(
-                    (int)(start / TimeSpan.TicksPerSecond)
+                    (int)(start / TimeSpan.TicksPerMillisecond
                     + msPerFrame
-                    - (int)(DateTime.Now.Ticks / TimeSpan.TicksPerSecond));
+                    - DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond));
             }
 
             // Call Finish() on all game objects

@@ -35,6 +35,7 @@ namespace Exercicio2
 
         private void GameLoop()
         {
+            int msPerFrame = 20;
             Console.Clear();
             running = true;
             while (running)
@@ -44,9 +45,9 @@ namespace Exercicio2
                 Update();
                 Render();
                 Thread.Sleep(
-                    (int)(start / TimeSpan.TicksPerSecond)
-                    + 20
-                    - (int)(DateTime.Now.Ticks / TimeSpan.TicksPerSecond));
+                    (int)(start / TimeSpan.TicksPerMillisecond
+                    + msPerFrame
+                    - DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond));
             }
         }
 
